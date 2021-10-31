@@ -13,7 +13,7 @@ public class Main {
 
         try{
             //Creates new file at specified location
-            File test = new File("C:\\Users\\aaaa\\Documents\\College Work\\CompScience\\Java\\FilesTest\\example.txt");
+            File test = new File("example.txt");
             //Checks if file has been made before
             if (test.createNewFile()){
                 System.out.println("File created: " + test.getName());
@@ -25,7 +25,7 @@ public class Main {
             e.printStackTrace();
         }
         try{
-            FileWriter writer = new FileWriter("C:\\Users\\aaaa\\Documents\\College Work\\CompScience\\Java\\FilesTest\\example.txt");
+            FileWriter writer = new FileWriter("example.txt");
             System.out.println("Type in content: ");
             writer.write(input.nextLine());
             writer.close();
@@ -35,7 +35,7 @@ public class Main {
             e.printStackTrace();
         }
         try {
-            File test = new File("C:\\Users\\aaaa\\Documents\\College Work\\CompScience\\Java\\FilesTest\\example.txt");
+            File test = new File("example.txt");
             Scanner reader = new Scanner(test);
             while(reader.hasNextLine()){
                 String row = reader.nextLine();
